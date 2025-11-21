@@ -1,0 +1,123 @@
+/* Global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Main section */
+.app {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #e5e5e5;
+}
+
+/* Chat box container */
+.chatapp {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    min-width: 700px;
+}
+
+/* Message list */
+.message-box {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual message container */
+.message-box > div {
+    background: #3a3a3a;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #4a4a4a;
+    max-width: 85%;
+}
+
+/* Role label */
+.message-box div > div:first-child {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 4px;
+}
+
+/* Adjust user messages (right aligned) */
+.message-box > div:nth-child(odd) {
+    margin-left: auto;
+    background: #404040;
+    border-color: #555;
+}
+
+/* Input area */
+.inputform {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Text input */
+#input-prompt {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    background: #2a2a2a;
+    color: white;
+    font-size: 16px;
+}
+
+#input-prompt:focus {
+    outline: none;
+    border-color: #888;
+}
+
+/* Send button */
+button {
+    padding: 12px 18px;
+    background: #ffffff;
+    color: #1e1e1e;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e5e5e5;
+}
+
+/* Error box */
+.errorbox {
+    margin-top: 15px;
+    background: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
