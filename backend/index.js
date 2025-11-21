@@ -11,7 +11,7 @@ app.get('/', async (req, res) => {
     try{
         const response = await generateText({
             model: google("gemini-2.5-flash-lite"),
-            prompt: "generate a greeting for my aunt",
+            prompt: "generate a greeting for my dad",
         });
 
         res.send(response.text);
